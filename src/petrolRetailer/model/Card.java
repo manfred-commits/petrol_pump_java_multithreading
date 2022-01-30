@@ -1,8 +1,8 @@
 package petrolRetailer.model;
 
 public class Card {
-    String cardNumber;
-    String expirationDate;
+    protected String cardNumber;
+    protected String expirationDate;
 
     public Card(String cardNumber, String expirationDate){
         this.cardNumber=cardNumber;
