@@ -8,12 +8,10 @@ public class Pump {
     protected final Integer pumpIdentifier;
     protected boolean isPumpAvailable=true;
     protected User customer;
-    ArrayList <User> userList;
 
     Pump(Integer pumpIdentifier){
 
         this.pumpIdentifier=pumpIdentifier;
-        //this.fuelAmount=fuelAmount;
     }
 
     //getter
