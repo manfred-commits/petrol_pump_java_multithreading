@@ -3,10 +3,13 @@ package petrolRetailer.model;
 import java.util.ArrayList;
 
 public class Controller {
-    public ArrayList<Pump> pumpList=new ArrayList<Pump>();
 
-    public static int numberOfPumps=4;
+    //attributes
+    protected ArrayList<Pump> pumpList=new ArrayList<Pump>();
 
+    protected static int numberOfPumps=4;
+
+    //constructor
     public Controller (){
 
         for(int i=0;i<numberOfPumps;i++){
