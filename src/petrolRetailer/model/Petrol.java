@@ -12,7 +12,7 @@ public class Petrol extends Thread{
     //class attributes
     public static int numberOfPumps=4;
 
-    public final ArrayList <Pump> pumpList=new ArrayList<Pump>();
+    public ArrayList <Pump> pumpList=new ArrayList<Pump>();
 
     public User customerFueling;
 
@@ -20,12 +20,14 @@ public class Petrol extends Thread{
 
     //constructor
     public Petrol(){
+
         for(int i=0;i<numberOfPumps;i++){
 
-            final Pump pumpErogator=new Pump(i);
+            Pump pumpErogator=new Pump(i);
 
             pumpList.add(pumpErogator);
         }
+
     }
 
 
@@ -39,9 +41,9 @@ public class Petrol extends Thread{
                 //System.out.println(i+1+" Pump identifier : "+pumpList.get(i).getIdentifier());
                 //System.out.println("fueling");
                 if(pumpList.get(i).isPumpAvailable==true){
-                    synchronized(pumpList.get(i)) {
-                        System.out.println("Pompa disponibile "+(i+1));
-                    }
+
+                    System.out.println("Pompa disponibile "+(i+1));
+
 
 
                 }
@@ -50,7 +52,6 @@ public class Petrol extends Thread{
 
             if(customerFueling.hasCustomerFueled==false){
                 pumpUserAssociation();
-                //fueling();
             }
 
         //}
