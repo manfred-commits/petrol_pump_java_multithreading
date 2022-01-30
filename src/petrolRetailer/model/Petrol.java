@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class Petrol extends Thread{
 
     //class attributes
-    public static int numberOfPumps=4;
+    //public static int numberOfPumps=4;
 
     public ArrayList <Pump> pumpList=new ArrayList<Pump>();
 
@@ -19,14 +19,9 @@ public class Petrol extends Thread{
     ArrayList <ArrayList> pumpUsedByUser=new ArrayList<ArrayList>();
 
     //constructor
-    public Petrol(){
+    public Petrol(ArrayList <Pump> pumpList){
+    this.pumpList=pumpList;
 
-        for(int i=0;i<numberOfPumps;i++){
-
-            Pump pumpErogator=new Pump(i);
-
-            pumpList.add(pumpErogator);
-        }
 
     }
 
@@ -102,7 +97,7 @@ public class Petrol extends Thread{
 
 
 
-            //System.out.println("Pump identifier : "+(pump.pumpIdentifier+1));
+            System.out.println("Pump IDENTIFIER: "+(pump.pumpIdentifier+1));
 
                     for(int k=customer.fuel;k>0;k--){
 

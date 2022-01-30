@@ -1,9 +1,6 @@
 package petrolRetailer;
 
-import petrolRetailer.model.Card;
-import petrolRetailer.model.Petrol;
-import petrolRetailer.model.Pump;
-import petrolRetailer.model.User;
+import petrolRetailer.model.*;
 
 import java.sql.Array;
 import java.util.ArrayList;
@@ -15,7 +12,7 @@ public class Program {
 
 
 
-
+        Controller pumpControl= new Controller();
 
         //ArrayList containing the customers that need to re fuel
         ArrayList <User> customerList=new ArrayList<User> (Arrays.asList(
@@ -31,7 +28,7 @@ public class Program {
 
         for (int i = 0; i < customerList.size(); i++) {
             //initialization of class instance of type Petrol
-            Petrol pumpController=new Petrol();
+            Petrol pumpController=new Petrol(pumpControl.getPumpList());
             //initialization of thread
             pumpController.start();
             //passage of ArrayList of type User containing all the customers
