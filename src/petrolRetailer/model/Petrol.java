@@ -1,22 +1,17 @@
 package petrolRetailer.model;
 
-import com.sun.jdi.connect.AttachingConnector;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 
 public class Petrol extends Thread{
 
     //class attributes
     //public static int numberOfPumps=4;
 
-    public ArrayList <Pump> pumpList=new ArrayList<Pump>();
+    protected ArrayList <Pump> pumpList=new ArrayList<Pump>();
 
-    public User customerFueling;
+    protected User customerFueling;
 
-    ArrayList <ArrayList> pumpUsedByUser=new ArrayList<ArrayList>();
+    protected ArrayList <ArrayList> pumpUsedByUser=new ArrayList<ArrayList>();
 
     //constructor
     public Petrol(ArrayList <Pump> pumpList){
