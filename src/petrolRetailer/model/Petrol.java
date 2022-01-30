@@ -42,7 +42,7 @@ public class Petrol extends Thread{
                 //System.out.println("fueling");
                 if(pumpList.get(i).isPumpAvailable==true){
 
-                    System.out.println("Pompa disponibile "+(i+1));
+                    //System.out.println("Pompa disponibile "+(i+1));
 
 
 
@@ -86,7 +86,7 @@ public class Petrol extends Thread{
             if(customerFueling.hasCustomerFueled==false){
 
                 //pumpUsedByUser.add(new ArrayList <Integer> (Arrays.asList(customerFueling.index,pumpList.get(pumpIndex).pumpIdentifier)));
-                System.out.println(pumpList.get(pumpIndex).pumpIdentifier);
+                //System.out.println(pumpList.get(pumpIndex).pumpIdentifier);
                 fueling(customerFueling,pumpList.get(pumpIndex));
             }
 
@@ -102,7 +102,7 @@ public class Petrol extends Thread{
 
 
 
-            System.out.println("Pump identifier : "+(pump.pumpIdentifier+1));
+            //System.out.println("Pump identifier : "+(pump.pumpIdentifier+1));
 
                     for(int k=customer.fuel;k>0;k--){
 

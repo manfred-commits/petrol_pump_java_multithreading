@@ -13,8 +13,7 @@ import java.util.List;
 public class Program {
     public static void main(String[] args) {
 
-        //initialization of class instance of type Petrol
-        Petrol pumpController=new Petrol();
+
 
 
 
@@ -31,6 +30,8 @@ public class Program {
 
 
         for (int i = 0; i < customerList.size(); i++) {
+            //initialization of class instance of type Petrol
+            Petrol pumpController=new Petrol();
             //initialization of thread
             pumpController.start();
             //passage of ArrayList of type User containing all the customers
