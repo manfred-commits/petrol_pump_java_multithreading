@@ -25,7 +25,7 @@ public class Petrol extends Thread{
     public void run(){
 
         //synchronized(pumpList) {
-            int availableIndex=0;
+            
             for(int i=0; i<pumpList.toArray().length;i++){
 
                 //System.out.println(i+1+" Pump identifier : "+pumpList.get(i).getIdentifier());
@@ -33,8 +33,6 @@ public class Petrol extends Thread{
                 if(pumpList.get(i).isPumpAvailable==true){
 
                     //System.out.println("Pompa disponibile "+(i+1));
-
-
 
                 }
 
